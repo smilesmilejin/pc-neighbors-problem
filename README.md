@@ -10,7 +10,7 @@ We are given the array `edges` where `edges[i]` holding some value `[from, to, w
 
 The integer `distance_threshold` is also provided.
 
-Write a function to return the city with the _smallest_ number of cities that are reachable through some path having a total cost of at most `distance_threshold`. If there are multiple such cities, return the city with the largest city number. For example, if city 1 and 3 share the same number of neighbors and both qualify as the city with the smallest number of neighbors within the threshold distance, we would want to return 3 as 3 is larger than 1.
+Write a function to return the city with the _smallest_ number of cities that are reachable through some path having a total cost of at most `distance_threshold`. If there are multiple such cities, return the city with the _largest_ city number. For example, if city 1 and 3 share the same number of neighbors and both qualify as the city with the smallest number of neighbors within the threshold distance, we would want to return 3, as 3 is larger than 1.
 
 Example:
 
