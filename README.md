@@ -90,3 +90,33 @@ With a distance threshold of 20, the city with the smallest number of neighbors 
   /             /      1      /
  5             0 ----------- 2
 ```
+
+## Notes for the Interviewer
+
+### Clarifying Questions
+
+#### Q: What should I return if there is a tie for the minimum amount of neighbors within the threshold?
+
+A: You should return the biggest numbered city. For example if city 1 and city 3 are tied for the minimum amount of neighbors within the threshold, we would want to return 3.
+
+#### Q: How do the edge weights work?
+
+A: Edge weights are stored in the list with the edge, it will be the third index in the list.
+
+#### Q: How do I get all of the neighbors for a particular city?
+
+A: You can find all of the neighbors for a particular city by converting the list of edges to an adjacency dictionary or adjacency list.
+
+### Hints
+
+- If your candidate struggles with an initial algorithm, encourage them to walk through an example and describe how they would do it using only pen and paper and a very small sample graph.
+
+- Another hint is that this problem can be solved using Dijkstra's algorithm. The algorithm will need to be altered to account for the distance threshold. We would not want to travel to a city that is outside of the threshold provided.
+
+- Ask the interviewee about the representation the graph is stored in. Is there a way to translate that representation to one that can be used to perform Dijkstra's algorithm?
+
+## Optional Bonus At-Home Challenges
+
+To be attempted after completing the interview.
+
+- What is the time/space complexity of sample solution?
